@@ -1,15 +1,15 @@
-en:
+vi:
   layouts:
     application:
-      title: "Ruby on Rails Tutorial Sample App"
+      title: "Huong dan ruby on rails"
   static_pages:
     home:
-      title: "Ruby on Rails Tutorial Sample App"
-      home: "Home"
-      sample: "Sample App"
-      sub: "This is the home page for
-        %{rort} sample application"
-      rort: "Ruby on Rails Tutorial"
+      title: "Ruby on Rails Tutorial"
+      home: "Trang chu"
+      sample: "Ung dung mau"
+      sub: "Day la trang chu cua
+        %{rort} ung dung mau"
+      rort: "Huong dan ruby on rails"
     about:
       title: "Ruby on Rails Tutorial Sample App"
       about: "About"
