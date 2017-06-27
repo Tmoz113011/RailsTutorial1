@@ -1,1 +1,1 @@
-# RailsTutorial1
+# framgia_rail
