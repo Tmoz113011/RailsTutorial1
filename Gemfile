@@ -18,6 +18,7 @@ gem "eslint-rails"
 gem "scss-lint"
 gem "rails_best_practices"
 gem "reek", "~> 4.7.1"
+gem "jquery-rails", "~> 4.3"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
