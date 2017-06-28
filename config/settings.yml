@@ -1,0 +1,7 @@
+validates:
+  username:
+    maxium: 50
+  email:
+    maxium: 255
+  password:
+    minium: 6
