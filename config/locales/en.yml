@@ -2,16 +2,29 @@ en:
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
+    header:
+      sample: "sample app"
+      home: "Home"
+      help: "Help"
+      login: "Log in"
+    footer:
+      this: "The %{rort} by %{mh}"
+      rort: "Ruby on Rails Tutorial"
+      mh: "Michael Hartl"
+      about: "About"
+      contact: "Contact"
+      news: "News"
   static_pages:
     home:
-      title: "Ruby on Rails Tutorial Sample App"
       home: "Home"
+      welcome: "Welcome to the Sample App"
       sample: "Sample App"
       sub: "This is the home page for
         %{rort} sample application"
       rort: "Ruby on Rails Tutorial"
+      signup: "Sign up now!"
+      railslogo: "Rails logo"
     about:
-      title: "Ruby on Rails Tutorial Sample App"
       about: "About"
       sub: "The %{rort} is a %{book} and
         %{screencast} to teach web development with
@@ -22,10 +35,13 @@ en:
       screencast: "screencast"
       ror: "Ruby on Rails"
     help:
-      title: "Ruby on Rails Tutorial Sample App"
       help: "Help"
       sub: "Get help on the Ruby on Rails Tutorial at the
         %{rorhs}. To get help on this sample app,see the
         %{rort} book."
       rorhs: "Rails Tutorial help section"
       rort: "Ruby on Rails Tutorial"
+    contact:
+      contact: "Contact"
+      ct: "contact page"
+      sub: "Contact the Ruby on Rails Tutorial about the sample app at the #{ct}."
