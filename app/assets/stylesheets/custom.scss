@@ -4,7 +4,10 @@
 // variables
 
 $gray-medium-light: #eaeaea;
-$white: #fff;
+$white: #000;
+$black: #fff;
+$red: #f00;
+$dark-blue: #bbb;
 
 // universal
 
@@ -62,6 +65,9 @@ p {
 
 
 // header
+.no-margin {
+  margin: 0;
+}
 
 .logo {
   color: $white;
@@ -107,5 +113,95 @@ footer {
       float: left;
       margin-left: 15px;
     }
+  }
+}
+
+// miscellaneous
+
+.debug_dump {
+  @include box-sizing;
+  clear: both;
+  float: left;
+  margin-top: 45px;
+  width: 100%;
+}
+
+// sidebar
+
+aside {
+  section {
+    margin-top: 20px;
+    padding: 10px 0;
+
+    .user-info {
+      margin-top: 20px;
+    }
+
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+
+    span {
+      display: block;
+      line-height: 1;
+      margin-bottom: 3px;
+    }
+
+    h1 {
+      font-size: 1.4em;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0;
+      text-align: left;
+    }
+  }
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
+.gravatar-edit {
+  margin-top: 15px;
+}
+
+// forms
+
+input,
+textarea,
+select,
+.uneditable-input {
+  @include box-sizing;
+  border: 1px solid $dark-blue;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+input {
+  height: auto;
+}
+
+.form-center {
+  margin: 0 auto;
+}
+
+.error_explanation {
+  color: $red;
+
+  ul {
+    color: $red;
+    margin: 0 0 30px;
+  }
+}
+
+.field_with_errors {
+  // scss-lint:disable PlaceholderInExtend
+  @extend .has-danger;
+  // scss-lint:enable PlaceholderInExtend
+
+  .form-control {
+    color: $state-danger-text;
   }
 }
