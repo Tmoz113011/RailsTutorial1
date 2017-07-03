@@ -1,4 +1,4 @@
-User.create!(name: "Example User", email: "tmoz@example.com",
+User.create!(name: "Example User", email: "tmoz113011@gmail.com",
   password: "123456", password_confirmation: "123456", admin: true,
   activated: true, activated_at: Time.zone.now)
 

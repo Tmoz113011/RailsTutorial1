@@ -1,10 +1,13 @@
 en:
   user_mailer:
     password_reset:
-      password-reset: "User#password_reset"
+      password-reset: "To reset your password click the link below:"
+      expire: "This link will expire in two hours."
+      notice: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
       find-me: ", find me in app/views/user_mailer/password_reset.html.erb"
     activate: "Account activation"
     active-acount: "User#account_activation"
+    reset: "Password reset"
     account_activation:
       success: "Account activated!"
       fail: "Invalid activation link"
@@ -111,7 +114,23 @@ en:
       signup: "Sign up now!"
       newuser: "New user?"
       remember: "Remember me on this computer"
+      forgot: "(Forgot password)"
   account_activations:
     edit:
       success: "Account activated!"
       fail: "Invalid activation link"
+  password_resets:
+    new:
+      forgot: "Forgot password"
+      submit: "Submit"
+    create:
+      reset: "Email sent with password reset instructions"
+      notfound: "Email address not found"
+    update:
+      notice: "Password has been reset."
+      not-empty: "can't be empty"
+      warn-expired: "Password reset has expired."
+    edit:
+      reset: "Reset Password"
+      update: "Update password"
+      confirm: "Confirmation"
