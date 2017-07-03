@@ -160,6 +160,7 @@ aside {
 }
 
 .gravatar {
+  border-radius: 50%;
   float: left;
   margin-right: 10px;
 }
@@ -219,5 +220,16 @@ form {
       margin-left: 0;
       width: auto;
     }
+  }
+}
+
+.users {
+  list-style: none;
+  margin: 0;
+
+  li {
+    border-bottom: 1px solid $gray-lighter;
+    overflow: auto;
+    padding: 10px 0;
   }
 }
