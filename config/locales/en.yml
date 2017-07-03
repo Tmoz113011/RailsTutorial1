@@ -2,6 +2,7 @@ en:
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
+      welcome: "Welcome to the Sample App!"
     header:
       sample: "sample app"
       home: "Home"
@@ -44,8 +45,15 @@ en:
     contact:
       contact: "Contact"
       ct: "contact page"
-      sub: "Contact the Ruby on Rails Tutorial about the sample app at the %{ct}."
+      sub: "Contact the Ruby on Rails Tutorial about the sample app at the #{ct}."
   users:
     new:
       signup: "Sign up"
       sub: "This will be a signup page for new users."
+      create: "Create my account"
+      confirm: "Confirmation"
+    create:
+      welcome: " Welcome to the Sample App!"
+  shared:
+    sub: "The form contains"
+    error: "error"
