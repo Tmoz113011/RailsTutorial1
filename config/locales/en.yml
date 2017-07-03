@@ -106,6 +106,13 @@ en:
       success: "Profile updated"
     destroy:
       success: "User deleted: %{user}"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      micropost: "Microposts:"
+      view: "view my profile"
   shared:
     error_messages:
       sub: "The form contains"
@@ -116,6 +123,9 @@ en:
     user_info:
       view: "view my profile"
       micropost: "micropost"
+    stats:
+      following: "following"
+      followers: "followers"
   sessions:
     create:
       error-login: "Invalid email/password combination"
@@ -155,3 +165,7 @@ en:
       deleted: "Micropost deleted"
     create:
       create-success: "Micropost created!"
+  relationships:
+    index:
+      following: "Following"
+      followers: "Followers"
