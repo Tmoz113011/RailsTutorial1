@@ -8,6 +8,10 @@ en:
       home: "Home"
       help: "Help"
       login: "Log in"
+      acc: "Account"
+      prof: "Profile"
+      setting: "Settings"
+      logout: "Log out"
     footer:
       this: "The %{rort} by %{mh}"
       rort: "Ruby on Rails Tutorial"
@@ -57,3 +61,10 @@ en:
   shared:
     sub: "The form contains"
     error: "error"
+  sessions:
+    create:
+      error-login: "Invalid email/password combination"
+    new:
+      login: "Log in"
+      signup: "Sign up now!"
+      newuser: "New user?"

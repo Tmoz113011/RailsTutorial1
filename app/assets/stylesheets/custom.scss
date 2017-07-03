@@ -195,7 +195,7 @@ input {
 
 .field-with-errors {
   // scss-lint:disable PlaceholderInExtend
-  @extend .has-danger;
+  @extend .has-error;
   // scss-lint:enable PlaceholderInExtend
 
   .form-control {
