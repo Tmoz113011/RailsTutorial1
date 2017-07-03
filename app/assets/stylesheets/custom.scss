@@ -7,6 +7,8 @@ $black: #000;
 $red: #f00;
 $dark-blue: #bbb;
 $gray: #e8e8e8;
+$blue: #00f;
+$dimgrey: #696969;
 
 @mixin box-sizing {
   -moz: border-box;
@@ -175,6 +177,46 @@ aside {
   margin-top: 15px;
 }
 
+.stats {
+  margin-top: 0;
+  overflow: auto;
+  padding: 0;
+
+  a {
+    border-left: 1px solid $gray-lighter;
+    color: $dimgrey;
+    float: left;
+    padding: 0 10px;
+
+    &:first-child {
+      border: 0;
+      padding-left: 0;
+    }
+
+    &:hover {
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+
+  strong {
+    display: block;
+  }
+}
+
+.user-avatars {
+  margin-top: 10px;
+  overflow: auto;
+
+  .gravatar {
+    margin: 1px;
+  }
+
+  a {
+    padding: 0;
+  }
+}
+
 // forms
 
 input,
@@ -263,6 +305,10 @@ form {
     img {
       display: block;
       padding: 5px 0;
+    }
+
+    .follow {
+      padding: 0;
     }
   }
 

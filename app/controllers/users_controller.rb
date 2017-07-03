@@ -26,6 +26,8 @@ class UsersController < ApplicationController
   def show
     @microposts = @user.microposts.desc.paginate page: params[:page],
       per_page: Settings.paginate.page
+    @follow = current_user.active_relationships.build
+    @unfollow = current_user.active_relationships.find_by followed_id: @user.id
   end
 
   def edit; end
@@ -70,6 +72,7 @@ class UsersController < ApplicationController
   end
 
   private
+
   def user_params
     params.require(:user)
       .permit :name, :email, :password, :password_confirmation

@@ -27,3 +27,9 @@ exclude_paths:
     enabled: false
   RepeatedConditional:
     enabled: false
+
+TooManyMethods:
+  max_methods: 20
+
+TooManyInstanceVariables:
+  max_instance_variables: 6
