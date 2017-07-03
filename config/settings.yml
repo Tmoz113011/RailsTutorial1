@@ -5,3 +5,9 @@ validates:
     maxium: 255
   password:
     minium: 6
+
+micropost:
+  maximum: 140
+
+avatar:
+  size: 50

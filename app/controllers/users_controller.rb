@@ -23,7 +23,9 @@ class UsersController < ApplicationController
     end
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.desc.paginate page: params[:page]
+  end
 
   def edit; end
 
@@ -43,11 +45,10 @@ class UsersController < ApplicationController
   end
 
   def logged_in_user
-    unless logged_in?
-      store_location
-      flash[:danger] = t ".warn"
-      redirect_to login_url
-    end
+    return if logged_in?
+    store_location
+    flash[:danger] = t ".warn"
+    redirect_to login_url
   end
 
   def correct_user
