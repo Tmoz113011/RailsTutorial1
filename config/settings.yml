@@ -11,3 +11,6 @@ micropost:
 
 avatar:
   size: 50
+
+paginate:
+  page: 5
