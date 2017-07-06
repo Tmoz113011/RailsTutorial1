@@ -51,6 +51,11 @@ en:
       ct: "contact page"
       sub: "Contact the Ruby on Rails Tutorial about the sample app at the #{ct}."
   users:
+    user:
+      confirm: "Are you sure?"
+    index:
+      all: "All users"
+      delete: "delete"
     new:
       signup: "Sign up"
       sub: "This will be a signup page for new users."
@@ -58,9 +63,26 @@ en:
       confirm: "Confirmation"
     create:
       welcome: " Welcome to the Sample App!"
+    edit:
+      edit: "Edit users"
+      save: "Save changes"
+      confirm: "Confirmation"
+      update: "Update your profile"
+      change: "Change"
+      warn: "Please log in to access this page"
+      notfound: "User can't be found"
+    update:
+      success: "Profile updated"
+      notfound: "User can't be found"
+    destroy:
+      success: "User deleted: %{user}"
+      notfound: "User can't be found"
+    show:
+     notfound: "User can't be found"
   shared:
-    sub: "The form contains"
-    error: "error"
+    error_messages:
+      sub: "The form contains"
+      error: "error"
   sessions:
     create:
       error-login: "Invalid email/password combination"

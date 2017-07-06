@@ -4,24 +4,27 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem "rails", "~> 5.0.4"
-gem "sqlite3"
-gem "puma", "~> 3.7"
-gem "sass-rails", "~> 5.0"
-gem "uglifier", ">= 1.3.0"
+gem "bcrypt", "3.1.11"
+gem "bootstrap-sass", "3.3.7"
+gem "bootstrap-will_paginate", "1.0.0"
 gem "coffee-rails", "~> 4.2"
-gem "turbolinks", "~> 5"
-gem "jbuilder", "~> 2.5"
-gem "rubocop", "~> 0.49.1", require: false
-gem "rubocop-checkstyle_formatter", require: false
+gem "config"
 gem "eslint-rails"
-gem "scss-lint"
+gem "faker", "1.7.3"
+gem "jbuilder", "~> 2.5"
+gem "jquery-rails", "~> 4.3"
+gem "puma", "~> 3.7"
+gem "rails", "~> 5.0.4"
 gem "rails_best_practices"
 gem "reek", "~> 4.7.1"
-gem "jquery-rails", "~> 4.3"
-gem "bootstrap-sass", "3.3.7"
-gem "bcrypt", "3.1.11"
-gem "config"
+gem "rubocop", "~> 0.49.1", require: false
+gem "rubocop-checkstyle_formatter", require: false
+gem "sass-rails", "~> 5.0"
+gem "scss-lint"
+gem "sqlite3"
+gem "turbolinks", "~> 5"
+gem "uglifier", ">= 1.3.0"
+gem "will_paginate", "3.1.5"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
