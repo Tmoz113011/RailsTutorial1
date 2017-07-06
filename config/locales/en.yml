@@ -1,4 +1,18 @@
 en:
+  user_mailer:
+    password_reset:
+      password-reset: "User#password_reset"
+      find-me: ", find me in app/views/user_mailer/password_reset.html.erb"
+    activate: "Account activation"
+    active-acount: "User#account_activation"
+    account_activation:
+      success: "Account activated!"
+      fail: "Invalid activation link"
+      greeting: "Hi!"
+      hi: "Hi"
+      active: "Active"
+      sample: "Sample App"
+      welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
@@ -56,13 +70,14 @@ en:
     index:
       all: "All users"
       delete: "delete"
+      warn: "Please log in to access this page"
     new:
       signup: "Sign up"
       sub: "This will be a signup page for new users."
       create: "Create my account"
       confirm: "Confirmation"
     create:
-      welcome: " Welcome to the Sample App!"
+      welcome: "Please check your email to activate your account!"
     edit:
       edit: "Edit users"
       save: "Save changes"
@@ -79,6 +94,10 @@ en:
       notfound: "User can't be found"
     show:
      notfound: "User can't be found"
+    update:
+      success: "Profile updated"
+    destroy:
+      success: "User deleted: %{user}"
   shared:
     error_messages:
       sub: "The form contains"
@@ -86,8 +105,13 @@ en:
   sessions:
     create:
       error-login: "Invalid email/password combination"
+      not-actived: "Account not activated. Check your email for the activation link. "
     new:
       login: "Log in"
       signup: "Sign up now!"
       newuser: "New user?"
       remember: "Remember me on this computer"
+  account_activations:
+    edit:
+      success: "Account activated!"
+      fail: "Invalid activation link"
