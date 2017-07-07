@@ -46,7 +46,6 @@ en:
       rort: "Ruby on Rails Tutorial"
       signup: "Sign up now!"
       railslogo: "Rails logo"
-      feed: "Micropost Feed"
     about:
       about: "About"
       sub: "The %{rort} is a %{book} and
@@ -80,7 +79,6 @@ en:
       sub: "This will be a signup page for new users."
       create: "Create my account"
       confirm: "Confirmation"
-      please-login: "Please login"
     create:
       welcome: "Please check your email to activate your account!"
     edit:
@@ -99,7 +97,6 @@ en:
       notfound: "User can't be found"
     show:
      notfound: "User can't be found"
-     micropost: "Microposts (%{count})"
     update:
       success: "Profile updated"
     destroy:
@@ -137,11 +134,3 @@ en:
       reset: "Reset Password"
       update: "Update password"
       confirm: "Confirmation"
-  microposts:
-    micropost:
-      posted: "Posted %{time} ago"
-      sure: "Are you sure?"
-    destroy:
-      deleted: "Micropost deleted"
-    create:
-      create-success: "Micropost created!"
