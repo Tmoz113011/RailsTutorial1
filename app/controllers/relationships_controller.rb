@@ -2,10 +2,9 @@ class RelationshipsController < ApplicationController
   before_action :logged_in_user
 
   def index
-    type = params[:type]
-    @title = t ".#{type}"
+    @title = params[:type]
     @user = User.find_by id: params[:id]
-    @users = @user.send(type).paginate page: params[:page]
+    @users = @user.send(@title).paginate page: params[:page]
     render "users/show_follow"
   end
 
